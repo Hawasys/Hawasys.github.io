@@ -140,12 +140,12 @@ a, a:visited, a:hover {
 }
 
 .container form .search-submit::before {
-	background-image:url(google1.svg);
+	background-image:url(duckduckgo.svg);
 	background-position:center center;
 	fill: white;
 	content:"";
-	width:23px;
-	height:23px;
+	width:26px;
+	height:26px;
 	position:absolute;
 	right:15px;
 	bottom: -3px;
