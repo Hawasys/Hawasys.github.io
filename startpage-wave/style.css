@@ -77,7 +77,7 @@ a, a:visited, a:hover {
 	font-family: 'test';
 	font-size: 120px;
 	margin-bottom: 20px;
-    color: #C86464;
+     	color: #C86464;
 }
 
 /* ------------- BOX STYLING ------------- */ 
@@ -103,7 +103,7 @@ a, a:visited, a:hover {
 	font-family: 'test';
 	font-size: 33px;
 	text-align: left;
-    color: #C86464;
+    	color: #C86464;
 }
 
 /* ------------- SEARCH STYLING ------------- */ 
