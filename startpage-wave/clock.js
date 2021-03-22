@@ -36,13 +36,13 @@ function draw() {
     
     fill(200, 100, 100);
     translate(-floor(width/4), 0);
-    rect(0,0, 5, 55);
+    rect(0,0, 5, 55, 10);
     for (let index = 0; index < 4; index++){
         display(hexcodes[brokenHour[index]], index);
     }
     
     translate(floor(width/2), 0);
-    rect(0,0, 5, 55);
+    rect(0,0, 5, 55, 10);
     for (let index = 0; index < 4; index++){
         display(hexcodes[brokenMin[index]], index);
     }
@@ -63,34 +63,34 @@ function display(val, valpos){
     
     fill(getColorFill(val, 4));
     stroke(getColorStroke(val, 4));
-    rect(13, -30, 20, 5);
+    rect(13, -30, 20, 5, 10);
     
     fill(getColorFill(val, 3));
     stroke(getColorStroke(val, 3));
-    rect(13, -10, 20, 5);
+    rect(13, -10, 20, 5, 10);
     
     fill(getColorFill(val, 2));
     stroke(getColorStroke(val, 2));
     beginShape();
-    vertex(3, -13);
-    vertex(3, -7);
-    vertex(30, -27);
-    vertex(23, -27);
+    curveVertex(3, -13);
+    curveVertex(3, -7);
+    curveVertex(30, -27);
+    curveVertex(23, -27);
     endShape(CLOSE);
 
     fill(getColorFill(val, 1));
     stroke(getColorStroke(val, 1));
     beginShape();
-    vertex(3, -27);
-    vertex(3, -20);
-    vertex(13, -13);
-    vertex(24, -13);
+    curveVertex(3, -27);
+    curveVertex(3, -20);
+    curveVertex(13, -13);
+    curveVertex(24, -13);
     endShape(CLOSE);
 
 
     fill(getColorFill(val, 0))
     stroke(getColorStroke(val, 0));
-    rect(25, -20, 5, 15);
+    rect(25, -20, 5, 15, 10);
     
     pop();
 }
