@@ -71,15 +71,6 @@ a, a:visited, a:hover {
 	text-align: left;
 }
 
-/* ------------- TIME STYLING ------------- */ 
-
-.container .time {
-	font-family: 'test';
-	font-size: 120px;
-	margin-bottom: 20px;
-     	color: #C86464;
-}
-
 /* ------------- BOX STYLING ------------- */ 
 
 .box {
@@ -224,4 +215,10 @@ a, a:visited, a:hover {
 	.box {
 		width: 450px;
 	}  
+}
+
+/* ------------- CLOCK ------------ */
+.container canvas {
+    display: block;
+    margin-bottom: 20px;
 }
